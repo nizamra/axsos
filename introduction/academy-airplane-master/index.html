@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>airplane</title>
+</head>
+<body>
+	<style type="text/css">
+	#ocean{
+		background-image: url("ocean.jpg");
+		width: 900px;
+		height: 700px;
+	}
+	.player{
+		background-image: url(player.png);
+		position: absolute;
+		width: 70px;
+		height: 75px;
+	}
+	.enemy{
+		background-image: url(enemy.png);
+		position:absolute;
+		width: 70px;
+		height: 84px;
+	}
+	.missles{
+		position: absolute;
+		background-color: yellow;
+		width: 2px;
+		height: 10px;
+	}
+	</style>
+	<div id="ocean">
+		<div id="player"></div>
+		<div id="enemies"></div>
+		<div id="missles"></div>
+	</div>
+
+
+	<script type="text/javascript">
+	var player={
+		left:450,
+		top:630
+	}
+	var enemies=[
+		{left:300,top:100},
+		{left:400,top:100},
+		{left:500,top:100},
+		{left:600,top:100}
+	]
+	var missles=[];
+	function drawPlayer(){
+		content="",
+		content="<div class='player' style='left:"+player.left+"px; top:"+player.top+"px'></div>"
+		document.getElementById("player").innerHTML=content;
+	}
+	document.onkeydown=function(e){
+		console.log(e)
+		if(e.keyCode==37){
+			player.left-=10;
+		}
+		if(e.keyCode==39){
+			player.left+=10;
+		}
+		if(e.keyCode==38){
+			if(player.top>550)
+			player.top-=10;
+		}
+		if(e.keyCode==40){
+			if(player.top<630)
+			player.top+=10;
+		}
+		if(e.keyCode==32){
+			missles.push({ left: player.left+33 ,top:player.top-8 })
+			drawMissles();
+		}
+		drawPlayer();
+	}
+	function drawEnemies(){
+		content=""
+		for(var i=0;i<enemies.length;i++){
+			content+="<div class='enemy' style='left:"+enemies[i].left+"px; top:"+enemies[i].top+"px'></div>"
+		}
+		document.getElementById("enemies").innerHTML=content;
+	}
+	function drawMissles(){
+		content=""
+		for(var i=0;i<missles.length;i++){
+			content+="<div class='missles' style='left:"+missles[i].left+"px; top:"+missles[i].top+"px'></div>"
+		}
+		document.getElementById("missles").innerHTML=content;
+	}
+	function moveEnemies(){
+		for(var i=0;i<enemies.length;i++){
+			if(enemies[i].top<630)
+			enemies[i].top+=1;
+		}
+	}
+	function moveMissles(){
+		for(var i=0;i<missles.length;i++){
+			missles[i].top-=10;
+		}
+	}
+	function gameLoop(){
+		drawPlayer()
+		moveMissles()
+		drawMissles()
+		moveEnemies()
+		drawEnemies()
+		setTimeout(gameLoop,10)
+	}
+	gameLoop()
+	</script>
+</body>
+</html>
