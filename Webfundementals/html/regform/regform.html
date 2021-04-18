@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registeration form</title>
+    </head>
+    <body>
+        <form id="my_form"></form>
+        <table>
+            <tbody>
+                <tr>
+                    <th>first name</th>
+                    <th><input type="text" id="first_name" name="first_name" form="my_form"></th>
+                </tr>
+                <tr>
+                    <th>last name</th>
+                    <th><input type="text" id="last_name" name="lastname"form="my_form"></th>
+                </tr>
+                <tr>
+                    <th>email</th>
+                    <th><input type="text" id="email" name="email"form="my_form"></th>
+                </tr>
+                <tr>
+                    <th>password</th>
+                    <th><input type="text" id="password" name="password"form="my_form"></th>
+                </tr>
+                <tr>
+                    <th>pw confirmation</th>
+                    <th><input type="text" id="Pwconfirmation" name="pwconf"form="my_form"></th>
+                </tr>
+                <tr>
+                    <th>birthday</th>
+                    <th><input type="text" id="birthday" name="birthday"form="my_form"></th>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male"form="my_form">
+                    <label for="female">Female</label>
+                    </td>
+                    <td>
+                    <input type="radio" id="female" name="gender" value="female"form="my_form">
+                    <label for="decline">other</label>
+                    <input type="radio" id="decline" name="gender" value="decline"form="my_form">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">this is a short description about yourself</td>
+                </tr>
+                <tr><td colspan="2"><textarea name="description" form="my_form"></textarea></td></tr>
+                <tr>
+                    <td><textfield></textfield></td>
+                </tr>
+                <tr>
+                    <td>favorite Language</td>
+                    <td>
+                        <select name="gender" form="my_form">
+                        <option value="male">javascript</option>
+                        <option value="female">c++</option>
+                        <option value="decline">[Prefer] not to say</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
