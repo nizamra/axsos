@@ -1,0 +1,11 @@
+.row{
+display :flex;
+}
+.column{
+    flex : 1;
+    border-style:solid;  
+    border-color: red;
+    border-radius:5px;
+    margin:15px;
+    background-color: blue;
+}

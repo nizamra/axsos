@@ -1,0 +1,14 @@
+.main{
+height: 400px;
+width: 100%px;
+display:flex;
+align-items: center;
+justify-content: center;
+background-color: blue;
+}
+.box{
+    width:70px;
+    height: 70px;
+    background-color: white;
+
+}
