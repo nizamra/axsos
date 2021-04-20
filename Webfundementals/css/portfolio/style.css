@@ -1,14 +1,14 @@
 *{
-    margin:0;
+    margin:0 auto;
     padding:0;
 }
 .container{
-    background-image: linear-gradient(black, purple,black);
+    background-image: linear-gradient(black, #311F25,black);
     min-height: 755px;
     width:850px;
 }
 .header{
-    background-color: rgb(197, 197, 197);
+    background-color: #F9F9F9;
     display:flex;
     align-items: center;
     height: 50px;
@@ -118,8 +118,7 @@ padding-left: 10px;
     background-color: #387538;
     color: white;
     border-radius: 5px;
-    border:3px solid black;
-
+    border:2px solid black;
 }
 .footer{
     background-image: linear-gradient(white,grey);
@@ -128,7 +127,7 @@ padding-left: 10px;
  
 }
 .footer img{
-width:20px
+width:20px;
 }
 .footer h4{
     line-break: after;
