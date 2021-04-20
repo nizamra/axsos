@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    background-image: linear-gradient(black, purple,black);
+    min-height: 755px;
+    width:850px;
+}
+.header{
+    background-color: rgb(197, 197, 197);
+    display:flex;
+    align-items: center;
+    height: 50px;
+}
+.header h1{
+    margin-left: 20px;
+    display: block;
+}
+.header h2{
+    margin-left: 290px;
+}
+.body{
+    display:inline-block
+}
+.top{
+    display: flex;
+    justify-content: space-evenly;
+}
+.top img{
+height: 200px;
+margin: 20px;
+border: 5px solid grey;
+
+}
+.content{
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 210px;
+    background-image:linear-gradient(white,grey);
+    
+}
+.content h2{
+    background-image: linear-gradient(grey,white);
+}
+.content p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.top h2{
+    background-image:linear-gradient(grey,white);
+    min-height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+span{
+    text-decoration: underline;
+}
+.webs{
+    display:flex;
+    justify-content: space-evenly;
+    height: 380px;
+}
+.webs p{
+padding-right: 10px;
+padding-left: 10px;
+}
+.lamode{
+    background-image:linear-gradient(grey,white);
+    width: 250px;
+}
+.familycontacts{
+    background-image:linear-gradient(grey,white);
+    width: 250px;
+}
+.fiveeleven{
+    background-image:linear-gradient(grey,white);
+    width: 250px;
+}
+.webs img{
+    width: 250px;
+    display: inline-block;
+}
+.bottom h2{
+    background-image:linear-gradient(grey,white)
+}
+.technologies{
+    
+    display:flex;
+    justify-content: space-evenly;
+}
+.technologies img{
+    width:45px;
+    height: 45px;
+}
+.lamodetech{
+    width: 250px;
+    height: 170px;
+    background-image: linear-gradient(grey,white);
+}
+.fiveeleventech{
+    width: 250px;
+    height: 170px;
+    background-image: linear-gradient(grey,white);
+}
+.familycontactstech{
+    width: 250px;
+    height: 170px;
+    background-image: linear-gradient(grey,white);
+}
+.noworries{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.technologies a{
+    background-color: #387538;
+    color: white;
+    border-radius: 5px;
+    border:3px solid black;
+
+}
+.footer{
+    background-image: linear-gradient(white,grey);
+   margin-top: 20px;
+   height: 50px;
+ 
+}
+.footer img{
+width:20px
+}
+.footer h4{
+    line-break: after;
+}
+.block{
+    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lol{
+    display:block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lol p{
+    text-decoration: underline;
+}
