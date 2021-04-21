@@ -30,25 +30,24 @@
 .top img{
 height: 200px;
 margin: 20px;
-border: 5px solid grey;
+border: 5px solid #DDCFDC;
 
 }
 .content{
     margin-top: 20px;
     margin-right: 20px;
     height: 210px;
-    background-image:linear-gradient(white,grey);
+    background-image:linear-gradient(to left,white,#DDCFDC);
     
 }
-.content h2{
-    background-image: linear-gradient(grey,white);
+background-image: linear-gradient(to left,#DDCFDC,white);
 }
 .content p{
     padding-left: 10px;
     padding-right: 10px;
 }
 .top h2{
-    background-image:linear-gradient(grey,white);
+  
     min-height: 50px;
     align-items: center;
     display: flex;
@@ -67,47 +66,46 @@ padding-right: 10px;
 padding-left: 10px;
 }
 .lamode{
-    background-image:linear-gradient(grey,white);
+    background-image:linear-gradient(to left,#DDCFDC,white);
     width: 250px;
 }
 .familycontacts{
-    background-image:linear-gradient(grey,white);
+    background-image:linear-gradient(to left,#DDCFDC,white);
     width: 250px;
 }
 .fiveeleven{
-    background-image:linear-gradient(grey,white);
+    background-image:linear-gradient(to left,#DDCFDC,white);
     width: 250px;
 }
 .webs img{
     width: 250px;
     display: inline-block;
 }
-.bottom h2{
-    background-image:linear-gradient(grey,white)
-}
+
 .technologies{
     
     display:flex;
     justify-content: space-evenly;
 }
 .technologies img{
-    width:45px;
-    height: 45px;
+    width:35px;
+    height: 35px;
+    margin:5px;
 }
 .lamodetech{
     width: 250px;
     height: 170px;
-    background-image: linear-gradient(grey,white);
+    background-image: linear-gradient(to left,#DDCFDC,white);
 }
 .fiveeleventech{
     width: 250px;
     height: 170px;
-    background-image: linear-gradient(grey,white);
+    background-image: linear-gradient(to left,#DDCFDC,white);
 }
 .familycontactstech{
     width: 250px;
     height: 170px;
-    background-image: linear-gradient(grey,white);
+    background-image: linear-gradient(to left,#DDCFDC,white);
 }
 .noworries{
     display:flex;
@@ -118,17 +116,15 @@ padding-left: 10px;
     background-color: #387538;
     color: white;
     border-radius: 5px;
-    border:2px solid black;
+    border:1px solid black;
 }
 .footer{
-    background-image: linear-gradient(white,grey);
+    background-color: #F8F8F8;
    margin-top: 20px;
    height: 50px;
  
 }
-.footer img{
-width:20px;
-}
+
 .footer h4{
     line-break: after;
 }
@@ -140,11 +136,31 @@ width:20px;
     justify-content: center;
 }
 .lol{
-    display:block;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .lol p{
+    margin: 0;
     text-decoration: underline;
+    padding: 0;
+}
+.lol img{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding:0;
+    margin-right: 2px;
+    margin-left :2px;
+}
+.bottom h2{
+    background-image: linear-gradient(#B0AFB4,#878593,#B0AFB4);
+    height: 50px;
+    display:flex;
+    align-items: center;
+    
+}
+.technologies h2{
+    height: 30px;
 }
