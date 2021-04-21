@@ -6,10 +6,9 @@
     width:920px;
     height: 520px;
     background-color: #F1F4F8;
-}
-.top{
     display:flex;
 }
+
 
 
 .zero {
@@ -91,6 +90,27 @@
     align-items: center;
     justify-content: center;
 }
+.eight{
+    margin-top: 20px;
+    width: 45px;
+    height: 45px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nine{
+    width: 45px;
+    height: 45px;
+    margin:1px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .h{
     border: 1px solid black;
    background-color:  #009AC7;
@@ -138,4 +158,9 @@ span{
 .bottom .column{
     width:45px;
     height: 45px;
+}
+.final p{
+    color:red;
+    text-align: center;
+    font-size: 15px;
 }
