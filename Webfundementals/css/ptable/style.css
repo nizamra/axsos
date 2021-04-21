@@ -164,3 +164,13 @@ span{
     text-align: center;
     font-size: 15px;
 }
+.column2 .eight p{
+    margin-left:70px;
+    font-size: 15px;
+    color: red;
+}
+.column2 .nine p{
+    margin-left: 60px;
+    font-size: 15px;
+    color: red;
+}
