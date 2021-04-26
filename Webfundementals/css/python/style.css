@@ -10,6 +10,7 @@
     background-color: #245076;
     width: 970px;
     height: 500px;
+    border-bottom: 2px solid black;
 }
 .logo{
     display:flex;
