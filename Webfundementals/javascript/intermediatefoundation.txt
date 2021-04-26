@@ -1,0 +1,89 @@
+function count(num){
+  var sum=0
+  for(var i=num;i>0;i--)
+  sum+=i;
+  return sum
+}
+
+
+function count(num){
+  var sum=1
+  for(var i=num;i>0;i--){
+  sum*=i;
+  }
+  if(num==0){
+    sum=1;
+  }
+  return sum
+}
+
+//we used recursive functions
+function fibonacci(num){
+  if(num==0 ){
+    return 0
+  }
+   if(num==1 ){
+    return 1
+  }
+  else 
+  return(fibonacci(num-1)+fibonacci(num-2))
+}
+console.log(fibonacci(6))
+other solution without recursive function
+function fibonacci(nums) {
+  
+  let fib = [0, 1];
+  let data = [];
+  
+  for(let i = 2; i <= nums; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2]; 
+    data.push(fib[i]);
+  }
+  
+  return data[data.length-1];
+}
+console.log(fibonacci(5))
+
+
+function lol(arr){
+  if(arr.length==1){
+    return null
+  }
+  else
+  return arr[arr.length-2]
+}
+
+function lol(arr,x){
+  if(arr.length<x){
+    return null
+  }
+  else
+  return arr[arr.length-x]
+}
+var arr=[5,2,3,6,4,9,7]
+console.log(lol(arr,3))
+
+function lol(arr){
+  if(arr.length==1){
+    return null
+  }
+  else{
+    arr=arr.sort()
+    return arr[arr.length-1]
+  }
+  
+}
+var arr=[42,1,4,3.14,7]
+console.log(lol(arr))
+
+function double(arr){
+  var newarr=[]
+  for(var i=0;i<arr.length;i++){
+    for(var j=0;j<2;j++){
+      newarr.push(arr[i])
+    }
+  }
+  return newarr
+}
+var arr= [4, "Ulysses", 42, false]
+console.log(double(arr))
